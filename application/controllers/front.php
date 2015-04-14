@@ -7,7 +7,7 @@ if(!defined('BASEPATH')) die ('Direct access to this page not allowed');
  * @license GNU/GPL general public license
  */
 
-class Front extends CI_Controller
+class Front extends MX_Controller
 {
     
     /*
@@ -20,6 +20,7 @@ class Front extends CI_Controller
     public function __construct() 
     {
         parent::__construct();
+        $this->load->helper('url');
         $this->load->model('front_model');
     }
     
@@ -33,6 +34,8 @@ class Front extends CI_Controller
     public function index()
     {
         $data['contentlist']    =   $this->front_model->get_content();
+        
+        $this->load->view('header');
         $this->load->view('front', $data);
     }
 }
