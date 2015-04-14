@@ -73,7 +73,7 @@ $route['news/(:any)']               =   'news/view/$1';
 $route['news']                      =   'news';
 
 $route['front']                     =   'front';
-
+$route['default_controller']        =   'front';
 //$route['default_controller'] = "page/view";
 //$route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
