@@ -26,7 +26,7 @@ class Login extends CI_Controller
         parent::__construct();
        
         $this->load->helper( array('form', 'url', 'html'));
-        $this->load->library(array('table' , 'input', 'form_validation', 'session'));
+        $this->load->library(array('table' , 'form_validation', 'session'));
         $this->load->model('admin/login_model');
         //echo Modules::run('login');
     }

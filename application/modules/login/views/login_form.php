@@ -12,7 +12,7 @@ echo validation_errors();
 echo form_open('login/verify');
 
 ?>
-<div>
+<div style="background-color:#f6f6f6; padding:20px 0 20px 10px;">
     <p>
         <span class="label"><?php echo form_label('User Name') ?>: </span><span>
             <?php 
