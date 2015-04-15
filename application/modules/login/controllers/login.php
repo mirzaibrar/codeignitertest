@@ -6,6 +6,7 @@ class Login extends MX_Controller {
     {
         parent::__construct();
         $this->load->helper(array('form','url'));
+        $this->load->library('session');
     }
 
 
@@ -26,7 +27,15 @@ class Login extends MX_Controller {
 	 */
 	public function index()
 	{
-         	$this->load->view('login_form');
+                if($this->session->userdata('status'))
+                {
+                        $data['username']    =   $this->session->userdata('username');
+                        echo "Welcome <strong>" . $data['username']."!</strong>";
+                }
+                else
+                {
+                 	$this->load->view('login_form');
+                }
 	}
         
         /*
