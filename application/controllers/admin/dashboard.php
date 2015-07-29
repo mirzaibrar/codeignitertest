@@ -22,10 +22,10 @@ class Dashboard extends CI_Controller
         parent::__construct();
         $this->load->helper('url');
         $this->load->library('session');
-        if(!$this->session->userdata('status'))
-        {
-            redirect('admin/login');
-        }
+//        if(!$this->session->userdata('status'))
+//        {
+//            redirect('admin/login');
+//        }
     }
     
     /*

@@ -50,11 +50,14 @@ class Accesslevel extends CI_Controller
          
         $this->load->view('admin/header');
         $this->load->view('admin/accesslevel', $data);
+        
     }
     
-    /*
-     * @method  void add(void) will show the form and add the access level into the database
+    /**
+     * void add(void) will show the form and add the access level into the database
+     * 
      * @author  Muhammad Ibrar
+     * @access public
      * @version 1.0.0
      * @return void 
      */

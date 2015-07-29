@@ -10,7 +10,12 @@
 |
 */
 
-
+//$hook['post_controller_constructor'] =   array(
+//    'class'     =>  'Verify_user',
+//    'funtion'   =>  'check',
+//    'filename'  =>  'verify_user.php',
+//    'filepath'  =>  'hooks'
+//);
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */
